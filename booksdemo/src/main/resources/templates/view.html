@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<nav th:replace="fragment :: page-header"></nav>
+<div>
+    <h2>Book Detail</h2>
+    <label>Book Title</label>
+    <label th:text =${book.bookTitle}></label><br>
+    <label>Book Author</label>
+    <label th:text =${book.bookName}></label>
+
+</div>
+
+</body>
+</html>
